@@ -1,3 +1,4 @@
+// define() is used for modules
 define(["credits", "products"], function(credits, products) {
 
   console.log("Function: purchaseProduct");
