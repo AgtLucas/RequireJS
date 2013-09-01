@@ -1,3 +1,4 @@
+// define() is used for modules
 define(function() {
 
   console.log("Function: getCredits");
