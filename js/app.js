@@ -3,7 +3,7 @@
 // Configure Loading modules from the lib directory, except 'app' ones
 
 requirejs.config({
-  "bbaseUrl": "js/lib",
+  "baseUrl": "js/lib",
   "paths": {
     "app": "../app"
   },
@@ -14,3 +14,4 @@ requirejs.config({
 });
 
 // Load the main app module to start the app
+requirejs(["app/main"]);
