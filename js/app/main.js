@@ -16,7 +16,7 @@ define(["jquery", "pjax", "pjax-cookies"], function($) {
           $(this).hide("slow")
         })
         .bind("pjax:complete", function() {
-          $(this).fadeIn(duration), console.log("Works!");
+          $(this).fadeIn(duration)
         });
     }
   });
