@@ -1,1 +1,8 @@
-Playing around with RequireJS!
+### Playing around with RequireJS!
+
+---
+
+#### TODO:
+
+- Add support for another plugins.
+- Documentation.
