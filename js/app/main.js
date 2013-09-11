@@ -9,7 +9,7 @@
 //   alert('b');
 // }
 
-define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel", "img-json"], function($) {
+define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], function($) {
 
   (function() {
     
