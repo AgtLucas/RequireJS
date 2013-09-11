@@ -12,7 +12,8 @@ requirejs.config({
     "pjax": ["jquery"],
     "pjax-cookies": ["jquery"],
     "magnifc-popup": ["jquery"],
-    "owl-carousel": ["jquery"]
+    "owl-carousel": ["jquery"],
+    "img-json": ["jquery"]
   }
 });
 
