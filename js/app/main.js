@@ -35,7 +35,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
     // Owl Carousel
     $('.owl-carousel').owlCarousel({
      
-      autoPlay: false,
+      autoPlay: 3000,
       
       items: 3,
       itemsDesktop: [1199,3],
