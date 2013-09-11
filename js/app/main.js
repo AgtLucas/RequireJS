@@ -23,7 +23,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
           $(this).hide("slow")
         })
         .bind("pjax:complete", function() {
-          $(this).fadeIn(duration), $('.main-content').css('backgroundColor', 'black')
+          $(this).fadeIn(duration)
         });
     };
 
