@@ -34,24 +34,15 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
     
     // Owl Carousel...
     $('.owl-carousel').owlCarousel({
-      jsonPath: '../lib/img.json',
-      jsonSuccess: customDataSuccess
+     
+      autoPlay: 3000,
+      
+      items: 4,
+      itemsDesktop: [1199,3],
+      itemsDesktopSmall: [979,3]
+     
     });
     
-    function customDataSuccess(data) {
-      var content = "";
-      
-      for (var i in data["items"]) {
-        
-        var img = data["items"][i].img;
-        var alt = data["items"][i].alt;
-        
-        content += "<img src\"" +img+ "\" alt=\"" +alt+ "\">"
-        
-      }
-      
-      $('.owl-carousel').html(content);
-    }
   })();
 
 });
