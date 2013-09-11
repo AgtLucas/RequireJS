@@ -6,10 +6,12 @@ requirejs.config({
   "baseUrl": "js/lib",
   "paths": {
     "app": "../app"
+    // "jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min"
   },
   "shim": {
     "pjax": ["jquery"],
-    "pjax-cookies": ["jquery"]
+    "pjax-cookies": ["jquery"],
+    "magnifc-popup": ["jquery"]
   }
 });
 

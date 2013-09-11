@@ -3,11 +3,17 @@
 //   purchase.purchaseProduct();
 // });
 
-// define(["jquery", "pjax", "pjax-cookies"], function($) {
-  $(function() {
+// if ( $('.main-content').length ) {
+//   alert('a');
+// } else {
+//   alert('b');
+// }
+
+define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
+
+  (function() {
     if ($.support.pjax) {
       var duration = 400;
-      alert('text');
       $(document).pjax("a[data-pjax]", ".main-content", {
         fragment: ".main-content",
         duration: duration
@@ -19,6 +25,9 @@
         .bind("pjax:complete", function() {
           $(this).fadeIn(duration), $('.main-content').css('backgroundColor', 'black')
         });
-    }
-  });
-// });
+    };
+
+    $('.img-link').magnificPopup({type:'image'});
+  })();
+
+});
