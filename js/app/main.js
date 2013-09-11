@@ -3,10 +3,11 @@
 //   purchase.purchaseProduct();
 // });
 
-define(["jquery", "pjax", "pjax-cookies"], function($) {
+// define(["jquery", "pjax", "pjax-cookies"], function($) {
   $(function() {
     if ($.support.pjax) {
       var duration = 400;
+      alert('text');
       $(document).pjax("a[data-pjax]", ".main-content", {
         fragment: ".main-content",
         duration: duration
@@ -20,4 +21,4 @@ define(["jquery", "pjax", "pjax-cookies"], function($) {
         });
     }
   });
-});
+// });
