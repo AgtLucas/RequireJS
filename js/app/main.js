@@ -12,6 +12,8 @@
 define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
 
   (function() {
+    
+    // Pjax
     if ($.support.pjax) {
       var duration = 400;
       $(document).pjax("a[data-pjax]", ".main-content", {
@@ -26,8 +28,30 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
           $(this).fadeIn(duration)
         });
     };
-
+    
+    // Magnific Popup
     $('.img-link').magnificPopup({type:'image'});
+    
+    // Owl Carousel
+    $('.owl-carousel').owlCarousel({
+      jsonPath: '../img.json',
+      jsonSuccess: customDataSuccess
+    });
+    
+    function customDataSuccess(data) {
+      var content = "";
+      
+      for (var i in data["items"]) {
+        
+        var img = data["items"][i].img;
+        var alt = data["items"][i].alt;
+        
+        content += "<img src\"" +img+ "\" alt=\"" +alt+ "\">"
+        
+      }
+      
+      $('.owl-carousel').html(content);
+    }
   })();
 
 });

@@ -11,7 +11,8 @@ requirejs.config({
   "shim": {
     "pjax": ["jquery"],
     "pjax-cookies": ["jquery"],
-    "magnifc-popup": ["jquery"]
+    "magnifc-popup": ["jquery"],
+    "owl-carousel": ["jquery"]
   }
 });
 
