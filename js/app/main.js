@@ -34,7 +34,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
     
     // Owl Carousel...
     $('.owl-carousel').owlCarousel({
-      jsonPath: '../img.json',
+      jsonPath: 'img.json',
       jsonSuccess: customDataSuccess
     });
     
