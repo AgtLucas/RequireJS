@@ -20,7 +20,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
       }),
       $(".main-content")
         .bind("pjax:beforeSend", function() {
-          $(this).hide("slow")
+          $(this).hide()
         })
         .bind("pjax:complete", function() {
           $(this).fadeIn(duration)
