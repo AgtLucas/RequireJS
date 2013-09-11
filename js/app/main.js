@@ -38,6 +38,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
       autoPlay: 3000,
       
       items: 3,
+      lazyLoad: true,
       itemsDesktop: [1199,3],
       itemsDesktopSmall: [979,3]
      
