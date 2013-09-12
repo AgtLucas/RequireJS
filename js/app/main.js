@@ -49,7 +49,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
 });
 
 define(["owl-carousel"], function($) {
-   (function() {
+  // (function() {
      // Owl Carousel
       $('.owl-carousel').owlCarousel({
        
@@ -61,5 +61,5 @@ define(["owl-carousel"], function($) {
         itemsDesktopSmall: [979,3]
        
       });
-   })(); 
+  // })(); 
 });
