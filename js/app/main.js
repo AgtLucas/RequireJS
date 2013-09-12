@@ -30,9 +30,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
     };
     
     // Magnific Popup.
-    function startMagPop() {
       $('.img-link').magnificPopup({type:'image'});
-    }
     
     // Owl Carousel.
     $('.owl-carousel').owlCarousel({
