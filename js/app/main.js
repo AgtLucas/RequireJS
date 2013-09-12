@@ -25,12 +25,14 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
           $(this).hide()
         })
         .bind("pjax:complete", function() {
-          $(this).fadeIn(duration)
+          $(this).fadeIn(duration), startMagPop()
         });
     };
     
     // Magnific Popup.
-    $('.img-link').magnificPopup({type:'image'});
+    function startMagPop() {
+      $('.img-link').magnificPopup({type:'image'});
+    }
     
     // Owl Carousel.
     $('.owl-carousel').owlCarousel({
