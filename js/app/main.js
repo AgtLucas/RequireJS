@@ -9,7 +9,7 @@
 //   alert('b');
 // }
 
-define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
+define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], function($) {
 
   (function() {
     
@@ -30,36 +30,20 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
     };
     
     // Magnific Popup
-    //$('.img-link').magnificPopup({type:'image'});
+    $('.img-link').magnificPopup({type:'image'});
     
-    // // Owl Carousel
-    // $('.owl-carousel').owlCarousel({
+    // Owl Carousel
+    $('.owl-carousel').owlCarousel({
      
-    //   autoPlay: 3000,
+      autoPlay: 3000,
       
-    //   items: 3,
-    //   lazyLoad: true,
-    //   itemsDesktop: [1199,3],
-    //   itemsDesktopSmall: [979,3]
+      items: 3,
+      lazyLoad: true,
+      itemsDesktop: [1199,3],
+      itemsDesktopSmall: [979,3]
      
-    // });
+    });
     
   })();
 
-});
-
-define(["owl-carousel"], function($) {
-  // (function() {
-     // Owl Carousel
-      $('.owl-carousel').owlCarousel({
-       
-        autoPlay: 3000,
-        
-        items: 3,
-        lazyLoad: true,
-        itemsDesktop: [1199,3],
-        itemsDesktopSmall: [979,3]
-       
-      });
-  // })(); 
 });
