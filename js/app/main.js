@@ -25,7 +25,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
           $(this).hide()
         })
         .bind("pjax:complete", function() {
-          $(this).fadeIn(duration), startMagPop()
+          $(this).fadeIn(duration)
         });
     };
     
