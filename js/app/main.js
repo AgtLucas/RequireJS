@@ -16,7 +16,7 @@ define(["jquery", "pjax", "pjax-cookies", "magnifc-popup", "owl-carousel"], func
     // Pjax
     if ($.support.pjax) {
       var duration = 400;
-      $(document).pjax("a[data-pjax]", ".main-content", {
+      $(document).pjax("a[data-pjax]", ".main-content .wrapper-960", {
         fragment: ".main-content .wrapper-960",
         duration: duration
       }),
