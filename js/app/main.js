@@ -9,7 +9,7 @@
 //   alert('b');
 // }
 
-define(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
+require(["jquery", "pjax", "pjax-cookies", "magnifc-popup"], function($) {
 
   (function() {
     if ($.support.pjax) {
